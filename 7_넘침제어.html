@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    .p{
+        width : 200px;
+        height : 150px;
+        background-color: royalblue;
+        margin : 20px;
+    }
+    .c{
+        width : 300px; /*100px넘침*/
+        height : 100px; 
+        background-color: orange;
+    }
+    .parent2{
+        overflow:hidden;
+        /*부모보다 넘치는 자식요소를 싹둑*/
+    }
+    .parent3{
+        overflow: scroll;
+        /*넘치는 부분을 잘라내고 스크롤바 생성*/
+    }
+
+    .parent4{
+        overflow: auto;
+        /**/
+    }
+
+</style>    
+</head>
+
+
+<body>
+    
+</body>
+
+<div class = "p">
+    <div class ="c child1"></div>
+</div>
+<div class = "p parent2">
+    <div class ="c"></div>
+</div>
+<div class = "p parent3">
+    <div class = "c"></div>
+</div>
+<div class = "p parent4">
+    <div class = "c"></div>
+</div>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin : 0px;
+            /*body의 기본적으로 margin값이 있어서 없애준거*/
+        }
+
+        div {
+            border : 1px solid ;
+        }
+        
+        span {
+            background-color: skyblue;
+        }
+
+        .box1 {
+            padding : 0px;
+            /*부모인 body태그와 마진이 0이라 보면 브라우저 끝에 붙어있다.*/
+        }
+        .box2 {
+            padding : 10px;
+        }
+        .box3 {
+            padding : 10px 20px;
+        }
+        .box4 {
+            padding : 10px 20px 30px 40px;
+        }
+        .box5 {
+            padding-left : 100px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <span>첫번째 박스</span>
+    </div>
+    <div class="box2">
+        <span>두번째 박스</span>
+    </div>
+    <div class="box3">
+        <span>세번째 박스</span>
+    </div>
+    <div class="box4">
+        <span>네번째 박스</span>
+    </div>
+    <div class="box5">
+        <span>다섯번째 박스</span>
+    </div>
+
+</body>
+
+</html>
