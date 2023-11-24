@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        div {
+            text-align : center;
+        }
+
+        .box {
+            width: 600px;
+            height: 400px;
+        }
+
+        
+        header {
+            background-color: grey;
+            font-weight: bold;
+            height: 10%;
+        }
+
+
+        footer {
+            background-color: grey;
+            font-weight: bold;
+            height: 10%;
+        }
+
+
+        main { /*main태그의 자식인 dix들 블록요소. 수평정렬필요*/
+            display: flex;
+            font-weight: bold;
+            /* justify-content: center;
+            flex-wrap: wrap; 막상 적었는데 결과가 같네 */
+            height: 80%;
+        }
+
+        .left {
+            background-color: skyblue;
+            width: 20%;
+        }
+
+        .center {
+            background-color: gainsboro;
+            width: 60%;
+        }
+
+        .right {
+            background-color: red;
+            width: 20%;
+        }
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+
+    <h2> 영역을 구분하는 태그들 - header(상단), section/main(본문), footer(하단) </h2>
+    <!--div대신 자주 사용. section은 여러개 오기도 한다. header이랑 footer은 한번만-->
+
+    <div class="box">
+        <header>
+            header
+        </header>
+
+        <main> <!--section써도 된다-->
+            <div class="left">left </div>
+            <div class="center">center</div>
+            <div class="right">right</div>
+        </main>
+
+        <footer>footer
+        </footer>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

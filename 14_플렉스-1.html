@@ -1,0 +1,91 @@
+<!-- p태그들 수평으로 나열하기 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin : 0px;
+        }
+
+        div {
+            width : 700px;
+            border : solid 1px black ;
+            margin : 20px;
+            padding : 10px;
+        }
+
+        p {
+            width : 100px;
+            height : 100px;
+            background-color: pink;
+        }
+
+        .parent1>p{ /*'parent1' style 적용 받는 태그의 자식 p*/
+            display:inline-block; /*p태그들 inline-block정렬*/
+            /* 단점 : 요소들 사이에 공백이 생김. margin 안줬어도 그럼 */
+            margin : 0 30px;
+            
+            /* 부모 영역 벗어나서 줄바꿈! 발생 */
+        }
+
+        .parent2>p{
+            float:left;
+            margin : 0 30px;  /*3. 부모범위 벗어나서 줄바꿈 일어남*/
+        }/*1. 단점 : 요소들 사이에 공백은 없으나 부모가 자손의 높이를  인식하지 못함 -> 부모 밖으로 자식이 튀어나옴*/
+/* 2. 해결방법 => */ .parent2 { /*자식 담길 충분한 크기의 그릇만들기*/
+                              height : 100px;
+                           
+        }
+
+
+        .parent3{
+            display:flex;
+            /*flex-direction안적어 주면, flex-direction : row로 기본 설정.*/            
+        }
+        .parent3>p {
+            margin : 0 30px;
+            /*마진값 아무리 키워도 줄 밖으로 삐져나가지 않음.
+            부모의 크기 (div {width : 700px; }) 넘어가면 안의 자식들 크기 자동 조절됨.*/
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <h3>display : inline-block</h3>
+    <div class="parent1">
+        <p>child1</p>
+        <p>child2</p>
+        <p>child3</p>
+        <p>child4</p>
+        <p>child5</p>
+    </div>
+
+    <h3>float : left</h3>
+    <div class="parent2">
+        <p>child1</p>
+        <p>child2</p>
+        <p>child3</p>
+        <p>child4</p>
+        <p>child5</p>
+    </div>
+
+    <h3>display : flex</h3>
+    <div class="parent3">
+        <p>child1</p>
+        <p>child2</p>
+        <p>child3</p>
+        <p>child4</p>
+        <p>child5</p>
+    </div>
+
+
+
+
+</body>
+
+</html>

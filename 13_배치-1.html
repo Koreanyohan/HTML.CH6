@@ -1,0 +1,45 @@
+<!-- position속성 안줬을때 일반적인 배치도 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            /*body의 기본 여백값 없애려고 이거 씀.*/
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            border: solid 1px;
+            /*색 안쓰면 black이 default*/
+            width: 300px;
+            height: 100px;
+        }
+
+        .child1 {
+            background-color: lavender;
+        }
+
+        .child2 {
+            background-color: darkgray;
+        }
+
+        .child3 {
+            background-color: gold;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="parent1">
+        <p class="child1">child1</p>
+        <p class="child2">child2</p>
+        <p class="child3">child3</p>
+        <!-- p태그 block속성이다 -->
+    </div>
+</body>
+
+</html>
