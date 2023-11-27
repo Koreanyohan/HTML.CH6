@@ -1,0 +1,18 @@
+body {
+    background-color:azure
+}
+
+foot a {
+    color : blue;
+    list-style: none;
+    text-decoration: none;
+}
+
+main img {
+    height : 600px; 
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+

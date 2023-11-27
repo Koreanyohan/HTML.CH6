@@ -1,0 +1,97 @@
+.logo {
+    position: fixed;
+    top: 40px;
+    left: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left : 0px;
+    right : 0px;
+}
+
+header >div{
+    
+    background-color: #f6f5f0;
+
+    padding: 70px 0px;
+}
+
+header a {
+    text-decoration: none;
+    color: #808080;
+    padding-right: 10px;
+}
+
+header div {
+    display: flex;
+    padding-right: 20px;
+}
+
+
+.menus {
+    position: absolute;
+    right : 30px;
+    top : 50px;
+    display : flex;
+    flex-direction: column;
+    font-size : 16px;
+   }
+
+.sub-menu1 {
+    margin-bottom: 15px;
+}
+
+
+
+
+section {
+    margin-top : 140px;
+    
+    text-align: center;
+    background-image : url('./img/bg.jpg');
+    background-size : cover;
+    padding-bottom : 80px;
+    padding-top : 80px;
+}
+
+section img{
+    width : 200px;
+}
+
+
+
+footer { /*해답풀이는 flex이용해서 footer아래의 div선택자 2개 정렬함.*/
+    padding : 100px;
+    background-color: #000000;
+    color : white;
+}
+
+.btn {
+    text-align: center;
+    padding : 30px;
+    }
+    
+    .btn >button {
+        width : 130px;
+        height : 40px;
+        margin : 15px;
+        background-color: #000000;
+        color : white;
+        border : white solid 1px;
+    }
+    
+    .btn>button:hover {
+        background-color: white;
+        color:black;
+    }
+    
+
+.info {
+    text-align: center;
+}
+
+.info >span {
+    margin : 30px;
+}

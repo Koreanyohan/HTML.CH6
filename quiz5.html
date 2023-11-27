@@ -2,34 +2,7 @@
 <html lang="en">
 
 <head>
-    <style>
-        header {
-            display :fixed;
-            background-color :bisque;
-           
-            align-items: center;
-            padding : 100px 0px ;
-        }
-
-        header div {
-            display: flex;
-            padding-right : 10px;
-        }
-
-        section {
-            display :flex;
-            justify-content: center;
-          
-        }
-
-        
-        .float {
-            float:right;
-
-        }
-    </style>
-
-
+   
     <title>Document</title>
     <link rel="stylesheet" href="./quiz5.css">
 </head>
@@ -37,23 +10,28 @@
 <body>
 
     <header>
-        <img src="./img/logo.png" alt="" style ="float:left; text">
+        <div>
+            <img src="./img/logo.png" alt="" class="logo">
 
-        <div class="float">
-            <div> Sign In</div>
-            <div> My Coffee </div>
-            <div> Customer Services & Ideas</div>
-            <div> Find a Store</div>
-        </div>
-        <br>
+            <div class="menus">
+                <div class="sub-menu1">
+                    <a href="#"> Sign In</a>
+                    <a href="#">My Coffee </a>
+                    <a href="#"> Customer Services & Ideas</a>
+                    <a href="#"> Find a Store</a>
+                </div>
 
-        <div class = "float">
-            <div>COFFEE</div>
-            <div>MENU</div>
-            <div>STORE</div>
-            <div>RESPONSIBILITY</div>
-            <div>MY COFFEE REWARDS</div>
-            <div>WHAT'S NEW</div>
+                <div class="sub-menu2">
+                    <a href="#">COFFEE</a>
+                    <a href="#">MENU</a>
+                    <a href="#">STORE<a>
+                            <a href="#">RESPONSIBILITY</a>
+                            <a href="#">MY COFFEE REWARDS</a>
+                            <a href="#">WHAT'S NEW</a>
+                        </a>
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -61,12 +39,10 @@
 
     <section>
         <div>
-            <img src="./img/헤이즐넛 아메리카노.png" alt="">
-            <img src="./img/헤이즐넛 아메리카노 실물.png" alt="">
-            <img src="./img/헤이즐넛 아메리카노.png" alt="">
-            <img src="./img/헤이즐넛 아메리카노 실물.png" alt="">
-
-
+            <img src="./img/헤이즐넛 아메리카노.png" alt="" >
+            <img src="./img/헤이즐넛 아메리카노 실물.png" alt="" >
+            <img src="./img/카라멜 크럼블 모카.png" alt="" >
+            <img src="./img/카라멜 크럼블 모카 실물.png" alt="">
         </div>
     </section>
 
@@ -74,9 +50,19 @@
 
 
     <footer>
+        <div class="btn">
+            <button>찾아오시는 길</button>
+            <button>신규입점제의</button>
+            <button>사이트 맵</button>
+        </div>
 
+        <div class="info">
+            <span>사업자등번호 123-45-678901</span>
+            <span>(주)커피 코리아</span>
+            <span>TEL : 02) 1234-5678 / FAX : 02) 1234-5678</span>
+            <span>개인정보 책임자 : 고길동</span>
 
-
+        </div>
     </footer>
 
 </body>
